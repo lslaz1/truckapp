@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+<html>
+	<head>
+		{% block title %}{{request.user.username}}'s Results{% endblock %}
+	</head>
+	<body>
+		{% block content %}
+
+		<h1>Sorry, {{request.user.username}}. Your answers didn't match any companies!</h1>
+		
+		{% endblock %}
+	</body>
+</html>

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+<html>
+
+
+{% block content %}
+{% for company in all_companies %}
+    <h4>{{company.name}} | Annual Salary: ${{company.salary}}<br>Contact Recruiter: {{company.email}}</h1>
+	{% endfor %}
+{% endblock %}

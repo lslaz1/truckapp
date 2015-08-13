@@ -1,0 +1,382 @@
+c = Company()
+c.name = 'JB Hunt'
+c.phone = '877-791-9458'
+c.email = 'recruiting@jbhunt.com'
+c.salary = 65000
+c.distance = 'otr'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'none'
+c.miles = 2500
+c.pets = 'no'
+c.riders = 'yes'
+c.experience = 3
+c.save()
+
+c = Company()
+c.name = 'YRC'
+c.phone = '800-610-6500'
+c.email = 'recruiting@yrc.com'
+c.salary = 60000
+c.distance = 'regional'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'LTL'
+c.elogs = 'yes'
+c.endorsements = 'none'
+c.miles = 2000
+c.pets = 'no'
+c.riders = 'no'
+c.experience = 6
+c.save()
+
+c = Company()
+c.name = 'Con-way'
+c.phone = '866-431-0706'
+c.email = 'recruiting@con-way.com'
+c.salary = 52000
+c.distance = 'regional'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'LTL'
+c.elogs = 'yes'
+c.endorsements = 'HT'
+c.miles = 2000
+c.pets = 'no'
+c.riders = 'no'
+c.experience = 6
+c.save()
+
+c = Company()
+c.name = 'Swift'
+c.phone = '866-902-2043'
+c.email = 'recruiting@swift.com'
+c.salary = 50000
+c.distance = 'otr'
+c.driver_type = 'team'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'none'
+c.miles = 2750
+c.pets = 'yes'
+c.riders = 'yes'
+c.experience = 6
+c.save()
+
+c = Company()
+c.name = 'Schneider'
+c.phone = '800-44-PRIDE'
+c.email = 'recruiting@schneider.com'
+c.salary = 60000
+c.distance = 'dedicated'
+c.driver_type = 'team'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'H'
+c.miles = 6000
+c.pets = 'no'
+c.riders = 'no'
+c.experience = 12
+c.save()
+
+c = Company()
+c.name = 'Landstar'
+c.phone = '913-341-5858'
+c.email = 'recruiting@landstar.com'
+c.salary = 135000
+c.distance = 'o/o'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'none'
+c.miles = 3000
+c.pets = 'yes'
+c.riders = 'yes'
+c.experience = 24
+c.save()
+
+c = Company()
+c.name = 'Old Dominion'
+c.phone = '800-432-6335'
+c.email = 'recruiting@olddominion.com'
+c.salary = 55000
+c.distance = 'regional'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'LTL'
+c.elogs = 'yes'
+c.endorsements = 'T'
+c.miles = 2000
+c.pets = 'no'
+c.riders = 'no'
+c.experience = 12
+c.save()
+
+c = Company()
+c.name = 'Werner'
+c.phone = '800-346-2818'
+c.email = 'recruiting@werner.com'
+c.salary = 50000
+c.distance = 'otr'
+c.driver_type = 'team'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'none'
+c.miles = 3000
+c.pets = 'yes'
+c.riders = 'yes'
+c.experience = 3
+c.save()
+
+c = Company()
+c.name = 'Estes'
+c.phone = '877-Wrk4Este'
+c.email = 'recruiting@estes.com'
+c.salary = 40000
+c.distance = 'local'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'LTL'
+c.elogs = 'yes'
+c.endorsements = 'HT'
+c.miles = 1500
+c.pets = 'no'
+c.riders = 'no'
+c.experience = 12
+c.save()
+*************************
+c = Company()
+c.name = 'R+L'
+c.phone = '864-236-7138'
+c.email = 'recruiting@rlenterprise.com'
+c.salary = 70000
+c.distance = 'dedicated'
+c.driver_type = 'team'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'H'
+c.miles = 6000
+c.pets = 'yes'
+c.riders = 'no'
+c.experience = 24
+c.save()
+
+c = Company()
+c.name = 'CR England'
+c.phone = '800-421-9004'
+c.email = 'driverapps@crengland.com'
+c.salary = 52000
+c.distance = 'otr'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'none'
+c.miles = 2500
+c.pets = no
+c.riders = yes
+c.experience = 3
+c.save()
+
+c = Company()
+c.name = 'Saia'
+c.phone = '800-765-7242'
+c.email = 'humanresources@saia.com'
+c.salary = 47000
+c.distance = local
+c.driver_type = solo
+c.benefits = mdvl
+c.equipment = van
+c.freight = no-touch
+c.elogs = yes
+c.endorsements = none
+c.miles = 
+c.pets = no
+c.riders = yes
+c.experience = 3
+c.save()
+
+12||||||solo|mdvl|van|LTL|1|1500|0|0|2 years|none
+
+c = Company()
+c.name = 
+c.phone = 
+c.email = recruiting@company.com
+c.salary = 
+c.distance = otr
+c.driver_type = solo
+c.benefits = mdvl
+c.equipment = van
+c.freight = no-touch
+c.elogs = yes
+c.endorsements = none
+c.miles = 
+c.pets = no
+c.riders = yes
+c.experience = 3 months
+c.save()
+
+13|CRST|800-736-2778|crstlogisticsinfo@crst.com|45000|regional|team|mdvl|van|no-touch|1|2700|1|0|6 months|none
+
+c = Company()
+c.name = 
+c.phone = 
+c.email = recruiting@company.com
+c.salary = 
+c.distance = otr
+c.driver_type = solo
+c.benefits = mdvl
+c.equipment = van
+c.freight = no-touch
+c.elogs = yes
+c.endorsements = none
+c.miles = 
+c.pets = no
+c.riders = yes
+c.experience = 3 months
+c.save()
+
+14|Crete|402-475-9521|recruiter@crete.com|145000|otr|o/o|mdvl|van|no-touch|1|3000|1|1|2 years|none
+
+c = Company()
+c.name = 
+c.phone = 
+c.email = recruiting@company.com
+c.salary = 
+c.distance = otr
+c.driver_type = solo
+c.benefits = mdvl
+c.equipment = van
+c.freight = no-touch
+c.elogs = yes
+c.endorsements = none
+c.miles = 
+c.pets = no
+c.riders = yes
+c.experience = 3 months
+c.save()
+
+15|Knight|866-396-4238|recruiter.knight.com|65000|dedicated|team|mdvl|van|no-touch|1|2000|1|1|1 year|none
+
+c = Company()
+c.name = 
+c.phone = 
+c.email = recruiting@company.com
+c.salary = 
+c.distance = otr
+c.driver_type = solo
+c.benefits = mdvl
+c.equipment = van
+c.freight = no-touch
+c.elogs = yes
+c.endorsements = none
+c.miles = 
+c.pets = no
+c.riders = yes
+c.experience = 3 months
+c.save()
+
+16|Millis|800-937-0880|recruiter.millis.com|70000|regional|solo|mdvl|van|no-touch|1|3000|1|1|2 years|H
+
+c = Company()
+c.name = 
+c.phone = 
+c.email = recruiting@company.com
+c.salary = 
+c.distance = otr
+c.driver_type = solo
+c.benefits = mdvl
+c.equipment = van
+c.freight = no-touch
+c.elogs = yes
+c.endorsements = none
+c.miles = 
+c.pets = no
+c.riders = yes
+c.experience = 3 months
+c.save()
+
+17|NFI|866-NFI-JOBS|recruiter.nfi.com|48000|intermodal|solo|mdvl|intermodal|no-touch|1|2200|0|0|1 year|H
+
+c = Company()
+c.name = 
+c.phone = 
+c.email = recruiting@company.com
+c.salary = 
+c.distance = otr
+c.driver_type = solo
+c.benefits = mdvl
+c.equipment = van
+c.freight = no-touch
+c.elogs = yes
+c.endorsements = none
+c.miles = 
+c.pets = no
+c.riders = yes
+c.experience = 3 months
+c.save()
+
+18|Celedon|800.235.2366 |recruiter@celedon.com|45000|bulk|solo|mdvl|tanker|no-touch|1|2000|0|0|1 year|HX
+
+c = Company()
+c.name = 
+c.phone = 
+c.email = recruiting@company.com
+c.salary = 
+c.distance = otr
+c.driver_type = solo
+c.benefits = mdvl
+c.equipment = van
+c.freight = no-touch
+c.elogs = yes
+c.endorsements = none
+c.miles = 
+c.pets = no
+c.riders = yes
+c.experience = 3 months
+c.save()
+
+19|Marten|866-340-5882 |recruiter@marten.com|60000|otr|team|mdvl|van|no-touch|1|5500|1|0|6 months|H
+
+c = Company()
+c.name = 
+c.phone = 
+c.email = recruiting@company.com
+c.salary = 
+c.distance = otr
+c.driver_type = solo
+c.benefits = mdvl
+c.equipment = van
+c.freight = no-touch
+c.elogs = yes
+c.endorsements = none
+c.miles = 
+c.pets = no
+c.riders = yes
+c.experience = 3 months
+c.save()
+
+20|Heartland|800-441-4953|recruiter@heartland.com|43000|dedicated|solo|mdvl|van|no-touch|1|2000|1|1|6 months|none
+
+
+
+
+

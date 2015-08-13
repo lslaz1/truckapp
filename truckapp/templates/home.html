@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+<html>
+	<head>
+		{% block title %}TruckApp{% endblock %}
+	</head>
+	<body>
+		{% block content %}
+		
+		<form action="questionnaire/" method="post">
+			<h1>Welcome, test {{request.user.username}}!</h1>
+			<button>Start Questionnaire</button>
+			{% csrf_token %}
+		
+		</form>
+		
+		{% endblock %}
+	</body>
+</html>
