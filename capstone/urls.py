@@ -15,4 +15,7 @@ urlpatterns = [
     url(r'^(<co_name>)-profile/$', views.co_profile, name='profile'),
     url(r'^(?P<co_name>)-contact/$', views.co_contact, name='contact'),
     url(r'^links/$', views.links, name='links'),
+    url(r'^zip_form/$', views.zip_form, name='zip_form'),
+    url(r'^distance/$', views.distance, name='distance'),
+
 ]

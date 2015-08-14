@@ -5,7 +5,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.template import RequestContext
 from django.db.models import Q
-
+import requests
 
 def homepage(request):
 	return render(request, 'home.html', {})
@@ -116,5 +116,27 @@ def search(request):
 		return render(request, 'search.html', {})
 	else:
 		return redirect('/links/')
+
+def zip_form(request):
+	return render(request, 'zip_form.html', {})
+
+def distance(request):
+	distance_url = "https://redline-redline-zipcode.p.mashape.com/rest/distance.json/"
+	zip1 = request.POST.get('zip1')
+	zip2 = request.POST.get('zip2')
+	distance_url += zip1 + '/' + zip2 + '/mile'
+	print "********",distance_url
+	response = requests.post(distance_url, headers={'X-Mashape-Key': '4EpPEDWTYYmshsizWRGCH8w71C6Gp1wiPHajsn4VIx5gu8XRAC','Accept': 'application/json'
+                      })
+	result = response.content
+	numbers = []
+	yes = ['1','2','3','4','5','6','7','8','9','0',',','.']
+	for char in result:
+		if char in yes:
+			numbers.append(char)
+	result = ''.join(numbers)
+	print '********',result
+	return render(request, 'distance.html', {'zip1':zip1,'zip2':zip2,'distance':result})
+
 
 

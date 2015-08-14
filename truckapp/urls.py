@@ -11,5 +11,7 @@ urlpatterns = [
     url(r'^(?P<co_name>)-profile/$', views.co_profile, name='profile'),
     url(r'^(?P<co_name>)-contact/$', views.co_contact, name='contact'),
     url(r'^links/$', views.links, name='links'),
+    url(r'^distance/$', views.distance, name='distance'),
+
 
 ]
