@@ -1,21 +1,31 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	    <!-- Optional theme -->
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<title>{% block title %}{% endblock %}</title>
+	    <link type="text/css" rel="stylesheet" href="/static/truckapp/base.css">
+	    <script>
+		function animation() {
+			$( "#logo" ).animate({
+				marginRight: "78%",},
+				5000, function() {
+			});
+		};
+		</script>
+		{% block title %}{% endblock %}
+		<link rel="shortcut icon" href="/static/favicon.ico">
 	</head>	
-	<body>
-	    <nav class="navbar navbar-inverse">
+	<body onload="animation();">
+		<div class="container-fluid">
+		<a href="/" id="logo2"><img id="logo" src="/static/truckapplogo.jpg" alt="truck logo" style="width:284px;height:80px;"></a>
+		</div>
+		<nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		      <a class="navbar-brand" href="/">
-		        <img alt="Brand" src="...">
-		      </a>
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
@@ -28,15 +38,15 @@
 		        <li><a href="/links/">Links</a></li>
 		        <li><a href="/questionnaire/">Questionnaire</a></li>
 		        <li><a href="/zip_form/">Distance Calculator</a></li>
+		        <li><a href="/weather_form/">Check Weather</a></li>
 		      </ul>
-		      <form class="navbar-form navbar-right" method="get">
-		        <div class="form-group">
-		          <input type="text" name="search" class="form-control" placeholder="Search Companies">
-		        </div>
-		        <button type="submit" class="btn btn-default">Submit</button>
-		      </form>
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="/login/">Log In</a></li>
+		        {% if user.is_authenticated %}
+		        	<li class="navbar-text">Hi, {{user.get_username}}.</li>
+					<li><a href="/logout/"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+				{% else %}
+					<li><a href="/login/"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+		        {% endif %}
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -44,5 +54,17 @@
 		<div id="content">
 	        {% block content %}{% endblock %}
 	    </div>
+	    <div class="container-fluid">
+	    	<div class="row">
+	    		<div class="col-md-4 col-md-offset-5">
+		    		<footer id="footer">
+			    		<a href="facebook.com"><img class="social_icons" src="/static/facebook.png"></a>
+			    		<a href="twitter.com"><img class="social_icons" src="/static/twitter.png"></a>
+			    		<a href="google.com"><img class="social_icons" src="/static/google.png"></a>
+			    		<a href="reddit.com"><img class="social_icons" src="/static/reddit.png"></a>
+		    		</footer>
+		    	</div>
+		    </div>	
+	    </div>	
 	</body>
 </html>

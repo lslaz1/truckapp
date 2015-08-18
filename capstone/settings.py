@@ -15,6 +15,8 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),'/var/www/static/',]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -54,6 +56,8 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'capstone.urls'
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+
+STATIC_ROOT = '/static/'
 
 TEMPLATES = [
     {

@@ -1,13 +1,52 @@
 {% extends "base.html" %}
-<html>
-	<head>
-		{% block title %}Links{% endblock %}
-	</head>
-	<body>
-		{% block content %}
-		
-		<h1>Links!</h1>
-		
-		{% endblock %}
-	</body>
-</html>
+
+{% block content %}
+
+<title>Links</title>
+	
+<div class="containter-fluid">  
+	<div class="row">
+	    <div class="col-md-3 col-md-offset-1">
+			<h4 class="link_header">forums<h4>
+				<ul>
+					<div class="links">	
+						<li><a href="http://www.thetruckersreport.com/">Truckers Report</a></li>
+						<li><a href="https://www.reddit.com/r/Trucking/">/r/Trucking</a></li>
+					</div>
+				</ul>
+			<h4 class="link_header">fmcsa<h4>
+				<ul>
+					<div class="links">	
+						<li><a href="http://www.fmcsa.dot.gov/">FMCSA</a></li>
+					</div>
+				</ul>
+		</div>
+		<div class="col-md-3">
+			<h4 class="link_header">medical<h4>
+				<ul>
+					<div class="links">
+						<li><a href="http://www.fmcsa.dot.gov/regulations/medical">DOT Medical Info</a></li>
+					</div>
+				</ul>		
+			<h4 class="link_header">new drivers<h4>
+				<ul>
+					<div class="links">		
+						<li><a href="http://www.roadmaster.com/blog/10-tips-for-new-truck-drivers/">Tips for New Drivers</a></li>
+						<li><a href="http://www.roadmaster.com/blog/how-to-pick-a-cdl-training-school-3-steps/">How to Choose a CDL School</a></li>
+					</div>	
+				</ul>
+		</div>
+		<div class="col-md-3">	
+			<h4 class="link_header">jobs<h4>
+				<ul>
+					<div class="links">	
+						<li><a href="http://www.findatruckingjob.com/">Find a Trucking Job</a></li>
+					</div>
+				</ul>
+		</div>
+	</div>
+</div>		
+	
+
+
+{% endblock %}

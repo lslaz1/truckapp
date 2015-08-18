@@ -1,4 +1,23 @@
 c = Company()
+c.name = 'Schneider'
+c.phone = '800-44-PRIDE'
+c.email = 'recruiting@schneider.com'
+c.salary = 60000
+c.distance = 'dedicated'
+c.driver_type = 'team'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'H'
+c.miles = 6000
+c.pets = 'no'
+c.riders = 'no'
+c.experience = 12
+c.url = 'http://schneiderjobs.com/'
+c.save()
+
+c = Company()
 c.name = 'JB Hunt'
 c.phone = '877-791-9458'
 c.email = 'recruiting@jbhunt.com'
@@ -14,6 +33,7 @@ c.miles = 2500
 c.pets = 'no'
 c.riders = 'yes'
 c.experience = 3
+c.url = 'https://www.jbhunt.com/jobs/driver/'
 c.save()
 
 c = Company()
@@ -32,6 +52,7 @@ c.miles = 2000
 c.pets = 'no'
 c.riders = 'no'
 c.experience = 6
+c.url = 'http://drive4yrc.com/'
 c.save()
 
 c = Company()
@@ -50,6 +71,7 @@ c.miles = 2000
 c.pets = 'no'
 c.riders = 'no'
 c.experience = 6
+c.url = 'http://www.con-way.com/en/careers/driving-opportunities'
 c.save()
 
 c = Company()
@@ -68,24 +90,7 @@ c.miles = 2750
 c.pets = 'yes'
 c.riders = 'yes'
 c.experience = 6
-c.save()
-
-c = Company()
-c.name = 'Schneider'
-c.phone = '800-44-PRIDE'
-c.email = 'recruiting@schneider.com'
-c.salary = 60000
-c.distance = 'dedicated'
-c.driver_type = 'team'
-c.benefits = 'mdvl'
-c.equipment = 'van'
-c.freight = 'no-touch'
-c.elogs = 'yes'
-c.endorsements = 'H'
-c.miles = 6000
-c.pets = 'no'
-c.riders = 'no'
-c.experience = 12
+c.url = 'http://www.swifttrans.com/careers/for-drivers'
 c.save()
 
 c = Company()
@@ -104,6 +109,7 @@ c.miles = 3000
 c.pets = 'yes'
 c.riders = 'yes'
 c.experience = 24
+c.url = 'http://www.landstar.com/'
 c.save()
 
 c = Company()
@@ -122,6 +128,7 @@ c.miles = 2000
 c.pets = 'no'
 c.riders = 'no'
 c.experience = 12
+c.url = 'https://www.odfl.com/Careers/'
 c.save()
 
 c = Company()
@@ -140,6 +147,7 @@ c.miles = 3000
 c.pets = 'yes'
 c.riders = 'yes'
 c.experience = 3
+c.url = 'http://www.werner.com/content/drivers/driver_opportunities/'
 c.save()
 
 c = Company()
@@ -158,8 +166,9 @@ c.miles = 1500
 c.pets = 'no'
 c.riders = 'no'
 c.experience = 12
+c.url = 'https://www.estes-express.com/WebApp/Jobs/home'
 c.save()
-*************************
+
 c = Company()
 c.name = 'R+L'
 c.phone = '864-236-7138'
@@ -176,6 +185,7 @@ c.miles = 6000
 c.pets = 'yes'
 c.riders = 'no'
 c.experience = 24
+c.url = 'https://careers.rlcarriers.com/'
 c.save()
 
 c = Company()
@@ -191,9 +201,10 @@ c.freight = 'no-touch'
 c.elogs = 'yes'
 c.endorsements = 'none'
 c.miles = 2500
-c.pets = no
-c.riders = yes
+c.pets = 'no'
+c.riders = 'yes'
 c.experience = 3
+c.url = 'http://www.crengland.com/truck-driving-jobs'
 c.save()
 
 c = Company()
@@ -201,180 +212,170 @@ c.name = 'Saia'
 c.phone = '800-765-7242'
 c.email = 'humanresources@saia.com'
 c.salary = 47000
-c.distance = local
-c.driver_type = solo
-c.benefits = mdvl
-c.equipment = van
-c.freight = no-touch
-c.elogs = yes
-c.endorsements = none
-c.miles = 
-c.pets = no
-c.riders = yes
-c.experience = 3
+c.distance = 'local'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'LTL'
+c.elogs = 'yes'
+c.endorsements = 'none'
+c.miles = 1500
+c.pets = 'no'
+c.riders = 'no'
+c.experience = 24
+c.url = 'http://www.jobs.net/jobs/saia/en-us/search/Truck-Driver-Jobs/ST7I5MV6Y1RGTPZNS9HT/'
 c.save()
-
-12||||||solo|mdvl|van|LTL|1|1500|0|0|2 years|none
 
 c = Company()
-c.name = 
-c.phone = 
-c.email = recruiting@company.com
-c.salary = 
-c.distance = otr
-c.driver_type = solo
-c.benefits = mdvl
-c.equipment = van
-c.freight = no-touch
-c.elogs = yes
-c.endorsements = none
-c.miles = 
-c.pets = no
-c.riders = yes
-c.experience = 3 months
+c.name = 'CRST'
+c.phone = '800-736-2778'
+c.email = 'crstlogisticsinfo@crst.com'
+c.salary = 45000
+c.driver_type = 'team'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'none'
+c.miles = 2700
+c.pets = 'yes'
+c.riders = 'no'
+c.experience = 6
+c.url = 'http://www.crst.com/drive-for-crst/'
 c.save()
-
-13|CRST|800-736-2778|crstlogisticsinfo@crst.com|45000|regional|team|mdvl|van|no-touch|1|2700|1|0|6 months|none
 
 c = Company()
-c.name = 
-c.phone = 
-c.email = recruiting@company.com
-c.salary = 
-c.distance = otr
-c.driver_type = solo
-c.benefits = mdvl
-c.equipment = van
-c.freight = no-touch
-c.elogs = yes
-c.endorsements = none
-c.miles = 
-c.pets = no
-c.riders = yes
-c.experience = 3 months
+c.name = 'Crete'
+c.phone = '402-475-9521'
+c.email = 'recruiting@crete.com'
+c.salary = 145000
+c.distance = 'otr'
+c.driver_type = 'o/o'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'none'
+c.miles = 3000
+c.pets = 'yes'
+c.riders = 'yes'
+c.experience = 24
+c.url = 'http://www.cretecarrier.com/careers/'
 c.save()
-
-14|Crete|402-475-9521|recruiter@crete.com|145000|otr|o/o|mdvl|van|no-touch|1|3000|1|1|2 years|none
 
 c = Company()
-c.name = 
-c.phone = 
-c.email = recruiting@company.com
-c.salary = 
-c.distance = otr
-c.driver_type = solo
-c.benefits = mdvl
-c.equipment = van
-c.freight = no-touch
-c.elogs = yes
-c.endorsements = none
-c.miles = 
-c.pets = no
-c.riders = yes
-c.experience = 3 months
+c.name = 'Knight'
+c.phone = '866-396-4238'
+c.email = 'recruiting@knight.com'
+c.salary = 65000
+c.distance = 'dedicated'
+c.driver_type = 'team'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'none'
+c.miles = '6000'
+c.pets = 'yes'
+c.riders = 'no'
+c.experience = 12
+c.url = 'http://www.driveknight.com/pc/index.html'
 c.save()
-
-15|Knight|866-396-4238|recruiter.knight.com|65000|dedicated|team|mdvl|van|no-touch|1|2000|1|1|1 year|none
 
 c = Company()
-c.name = 
-c.phone = 
-c.email = recruiting@company.com
-c.salary = 
-c.distance = otr
-c.driver_type = solo
-c.benefits = mdvl
-c.equipment = van
-c.freight = no-touch
-c.elogs = yes
-c.endorsements = none
-c.miles = 
-c.pets = no
-c.riders = yes
-c.experience = 3 months
+c.name = 'Millis'
+c.phone = '800-937-0880'
+c.email = 'recruiting@millis.com'
+c.salary = 70000
+c.distance = 'regional'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'H'
+c.miles = 3000
+c.pets = 'yes'
+c.riders = 'yes'
+c.experience = 24
+c.url = 'http://www.millistransfer.com/'
 c.save()
-
-16|Millis|800-937-0880|recruiter.millis.com|70000|regional|solo|mdvl|van|no-touch|1|3000|1|1|2 years|H
 
 c = Company()
-c.name = 
-c.phone = 
-c.email = recruiting@company.com
-c.salary = 
-c.distance = otr
-c.driver_type = solo
-c.benefits = mdvl
-c.equipment = van
-c.freight = no-touch
-c.elogs = yes
-c.endorsements = none
-c.miles = 
-c.pets = no
-c.riders = yes
-c.experience = 3 months
+c.name = 'NFI'
+c.phone = '866-NFI-JOBS'
+c.email = 'recruiting@nfi.com'
+c.salary = 48000
+c.distance = 'intermodal'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'H'
+c.miles = 2200
+c.pets = 'no'
+c.riders = 'no'
+c.experience = 12
+c.url = 'http://careers.nfiindustries.com/drivers/'
 c.save()
-
-17|NFI|866-NFI-JOBS|recruiter.nfi.com|48000|intermodal|solo|mdvl|intermodal|no-touch|1|2200|0|0|1 year|H
 
 c = Company()
-c.name = 
-c.phone = 
-c.email = recruiting@company.com
-c.salary = 
-c.distance = otr
-c.driver_type = solo
-c.benefits = mdvl
-c.equipment = van
-c.freight = no-touch
-c.elogs = yes
-c.endorsements = none
-c.miles = 
-c.pets = no
-c.riders = yes
-c.experience = 3 months
+c.name = 'Celedon'
+c.phone = '800-235-2366'
+c.email = 'recruiting@celedon.com'
+c.salary = 45000
+c.distance = 'bulk'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'tanker'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'HX'
+c.miles = 2000
+c.pets = 'no'
+c.riders = 'no'
+c.experience = 12
+c.url = 'http://www.driveceladon.com/'
 c.save()
-
-18|Celedon|800.235.2366 |recruiter@celedon.com|45000|bulk|solo|mdvl|tanker|no-touch|1|2000|0|0|1 year|HX
 
 c = Company()
-c.name = 
-c.phone = 
-c.email = recruiting@company.com
-c.salary = 
-c.distance = otr
-c.driver_type = solo
-c.benefits = mdvl
-c.equipment = van
-c.freight = no-touch
-c.elogs = yes
-c.endorsements = none
-c.miles = 
-c.pets = no
-c.riders = yes
-c.experience = 3 months
+c.name = 'Marten'
+c.phone = '866-340-5882'
+c.email = 'recruiting@marten.com'
+c.salary = 60000
+c.distance = 'otr'
+c.driver_type = 'team'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'H'
+c.miles = 5500
+c.pets = 'yes'
+c.riders = 'no'
+c.experience = 6
+c.url = 'http://www.drive4marten.com/'
 c.save()
-
-19|Marten|866-340-5882 |recruiter@marten.com|60000|otr|team|mdvl|van|no-touch|1|5500|1|0|6 months|H
 
 c = Company()
-c.name = 
-c.phone = 
-c.email = recruiting@company.com
-c.salary = 
-c.distance = otr
-c.driver_type = solo
-c.benefits = mdvl
-c.equipment = van
-c.freight = no-touch
-c.elogs = yes
-c.endorsements = none
-c.miles = 
-c.pets = no
-c.riders = yes
-c.experience = 3 months
+c.name = 'Heartland'
+c.phone = '800-441-4953'
+c.email = 'recruiting@heartland.com'
+c.salary = 43000
+c.distance = 'dedicated'
+c.driver_type = 'solo'
+c.benefits = 'mdvl'
+c.equipment = 'van'
+c.freight = 'no-touch'
+c.elogs = 'yes'
+c.endorsements = 'none'
+c.miles = 2000
+c.pets = 'yes'
+c.riders = 'yes'
+c.experience = 6
+c.url = 'http://www.heartlandexpress.com/default-drivers.aspx'
 c.save()
-
-20|Heartland|800-441-4953|recruiter@heartland.com|43000|dedicated|solo|mdvl|van|no-touch|1|2000|1|1|6 months|none
 
 
 

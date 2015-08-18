@@ -1,18 +1,20 @@
 {% extends "base.html" %}
-<html>
-	<head>
-		{% block title %}TruckApp{% endblock %}
-	</head>
-	<body>
-		{% block content %}
+
+{% block content %}
+
+<title>TruckApp</title>
+
+<form id="welcome" action="questionnaire/" method="post">
+	
+	{% if user.is_authenticated %}
+	    <h2>We're gonna ask you<br>some questions.</h2>
+	    <button class="button" style="height:50px;width:200px;font-size: 20px">Start Questionnaire</button>
+		{% csrf_token %}
+	{% else %}
+	    <h2>Welcome, new user.<br>Please<a href='/login/'> log in.</a></h2>
+	{% endif %}
+
+	{% endblock %}
+
+</form>
 		
-		<form action="questionnaire/" method="post">
-			<h1>Welcome, test {{request.user.username}}!</h1>
-			<button>Start Questionnaire</button>
-			{% csrf_token %}
-		
-		</form>
-		
-		{% endblock %}
-	</body>
-</html>

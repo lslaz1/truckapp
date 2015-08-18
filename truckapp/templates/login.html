@@ -1,21 +1,32 @@
 {% extends "base.html" %}
-<html>
-	<head>	
-		{% block title %}Log In{% endblock %}
-	</head>
-	<body>
-		{% block content%}
 
-		<form action="/login_user/" method="post">
-			<label>Username:</label>
-			<input type='text' name='username'><br>
-			<label>Password:</label>
-			<input type='password' name='password'><br>
-			{% csrf_token %}
-			<button type='submit'>Log In</button>
-		</form>
-		<p>Need an account?<a href='/signup/'>Click to Create</a></p>
+{% block content%}
 
-		{% endblock %}
-	</body>
-</html>
+<title>Log In</title>
+<div class="container-fluid">
+	<div class="row">
+    	<div class="col-md-4 col-md-offset-4">
+    		<div id="login">
+			<form action="/login_user/" method="post">
+				<div style="border-bottom: 1px solid #888888">
+				<h3>Log In</h3>
+				</div>
+				<br>
+				<input type='text' name='username' placeholder='username'>
+				<br>
+				<br>
+				<input type='password' name='password' placeholder='password'>
+				<br>
+				<br>
+				{% csrf_token %}
+				<button class="button" type='submit'>Sign In</button>
+			</form>
+			<br>
+			<br>
+			<p>Need an account?<a href='/signup/'>Click to Create</a></p>
+			</div>	
+		</div>	
+	</div>
+</div>
+
+{% endblock %}

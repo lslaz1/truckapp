@@ -1,72 +1,79 @@
 {% extends "base.html" %}
-<html>
-	<head>
-		{% block title %}Questionnaire{% endblock %}
-	</head>
+
+
 	<body>
 		{% block content %}
-
+		<title>Questionnaire</title>
 			<br>
-			<h2>Choose length of experience.</h2><br>
-			<form action="/results/" method="post">
-			<select id="experience" name="experience">
-				<option value="1">Less than 3 Months</option>
-				<option value="2">3 - 6 Months</option>
-				<option value="3">6 Months to 1 Year</option>
-				<option value="4">1 Year</option>
-				<option value="5">2 Years</option>
-				<option value="6">3 or more years</option>
-			</select>
-			<br>
-			<h2>Choose an annual salary range.</h2><br>
-			<select id="salary" name="salary">
-				<option value="1">$30,000 to $39,999</option>
-				<option value="2">$40,000 to $49,999</option>
-				<option value="3">$50,000 to $59,999</option>
-				<option value="4">$60,000 to $69,999</option>
-				<option value="5">$70,000 to $79,999</option>
-				<option value="6">$80,000+</option>
-				<option value="7">All Salary Ranges<option>
-			</select>
-			<br>
-			<h2>Choose from distance options.</h2><br>
-			<input type="checkbox" name="otr" value="otr"> Over The Road<br>
-			<input type="checkbox" name="regional" value="regional"> Regional<br>
-			<input type="checkbox" name="dedicated" value="dedicated"> Dedicated<br>
-			<input type="checkbox" name="local" value="local"> Local<br>
-			<input type="checkbox" name="intermodal" value="intermodal"> Intermodal<br>
-			<input type="checkbox" name="bulk" value="bulk"> Bulk<br>
-			<br>
-			<h2>Choose from driver types.</h2><br>
-				<input type="checkbox" name="solo" value="solo"> Solo<br>
-			<input type="checkbox" name="team" value="team"> Team<br>
-			<input type="checkbox" name="ownerop" value="ownerop"> Owner Operator<br>
-			<br>
-			<h2>Choose freight options.</h2><br>
-				<select id="freight" name="freight">
+			<div id="quiz">
+				<h2>Choose length of experience.</h2><br>
+				<form action="/results/" method="post">
+				<select class="answer" id="experience" name="experience">
+					<option value="1">Less than 3 Months</option>
+					<option value="2">3 - 6 Months</option>
+					<option value="3">6 Months to 1 Year</option>
+					<option value="4">1 Year</option>
+					<option value="5">2 Years</option>
+					<option value="6">3 or more years</option>
+				</select>
+				<br>
+				<h2>Choose an annual salary range.</h2><br>
+				<select class="answer" id="salary" name="salary">
+					<option value="1">$30,000 to $39,999</option>
+					<option value="2">$40,000 to $49,999</option>
+					<option value="3">$50,000 to $59,999</option>
+					<option value="4">$60,000 to $69,999</option>
+					<option value="5">$70,000 to $79,999</option>
+					<option value="6">$80,000+</option>
+					<option value="7">All Salary Ranges<option>
+				</select>
+				<br>
+				<h2>Choose from distance options.</h2><br>
+				<div class= "answer">
+					<input type="checkbox" name="otr" value="otr"> Over The Road<br>
+					<input type="checkbox" name="regional" value="regional"> Regional<br>
+					<input type="checkbox" name="dedicated" value="dedicated"> Dedicated<br>
+					<input type="checkbox" name="local" value="local"> Local<br>
+					<input type="checkbox" name="intermodal" value="intermodal"> Intermodal<br>
+					<input type="checkbox" name="bulk" value="bulk"> Bulk
+				</div>	
+				<br>
+				<h2>Choose from driver types.</h2><br>
+				<div class= "answer">
+					<input type="checkbox" name="solo" value="solo"> Solo<br>
+					<input type="checkbox" name="team" value="team"> Team<br>
+					<input type="checkbox" name="ownerop" value="ownerop"> Owner Operator
+				</div>
+				<br>
+				<h2>Choose freight options.</h2><br>
+				<select class="answer" id="freight" name="freight">
 					<option value="no_touch">No-touch</option>
 					<option value="ltl">LTL</option>
 				</select>
 				<br>
-			<h2>Choose from trailer equipment.</h2><br>
-				<input type="checkbox" name="van" value="van"> Van<br>
-				<input type="checkbox" name="flatbed" value="flatbed"> Flatbed<br>
-				<input type="checkbox" name="tanker" value="tanker"> Tanker<br>
+				<h2>Choose from trailer equipment.</h2><br>
+				<div class= "answer">
+					<input type="checkbox" name="van" value="van"> Van<br>
+					<input type="checkbox" name="flatbed" value="flatbed"> Flatbed<br>
+					<input type="checkbox" name="tanker" value="tanker"> Tanker
+				</div>	
 				<br>
-			<h2>Do you want to use Electronic Logging?</h2><br>
-				<select id="elogs" name="elogs">
+				<h2>Do you want to use Electronic Logging?</h2><br>
+				<select class="answer" id="elogs" name="elogs">
 					<option value="elog_yes">Yes</option>
 					<option value="elog_no">No</option>
 				</select>
 				<br>
-			<h2>What CDL Endorsements do you have?</h2><br>
-				<input type="checkbox" name="none" value="none"> None<br>
-				<input type="checkbox" name="hazmat" value="h"> HazMat (H)<br>
-				<input type="checkbox" name="doubles" value="t"> Doubles and Triples (T)<br>
-				<input type="checkbox" name="xtanker" value="x"> Tanker (X)<br>
+				<h2>What CDL Endorsements do you have?</h2><br>
+				<div class= "answer">
+					<input type="checkbox" name="none" value="none"> None<br>
+					<input type="checkbox" name="hazmat" value="h"> HazMat (H)<br>
+					<input type="checkbox" name="doubles" value="t"> Doubles and Triples (T)<br>
+					<input type="checkbox" name="xtanker" value="x"> Tanker (X)
+				</div>	
 				<br>
-			<h2>Miles per week?</h2><br>
-				<select id="mileage" name="mileage">
+				<h2>Miles per week?</h2><br>
+				<select class="answer" id="mileage" name="mileage">
 					<option value="1">1,000 to 1,999</option>
 					<option value="2">2,000 to 2,999</option>
 					<option value="2">3,000 to 3,999</option>
@@ -75,31 +82,33 @@
 					<option value="2">6,000+</option>
 				</select>
 				<br>
-			<h2>Choose from insurance benefits.</h2><br>
+				<h2>Choose from insurance benefits.</h2><br>
+				<div class= "answer">	
 					<input type="checkbox" name="med" value="med"> Medical<br>
-				<input type="checkbox" name="dental" value="dental"> Dental<br>
-				<input type="checkbox" name="vision" value="vision"> Vision<br>
-				<input type="checkbox" name="life" value="life"> Life<br>
+					<input type="checkbox" name="dental" value="dental"> Dental<br>
+					<input type="checkbox" name="vision" value="vision"> Vision<br>
+					<input type="checkbox" name="life" value="life"> Life
+				</div>	
 				<br>
-			<h2>Pet Friendly Companies?</h2><br>
-				<select id="pets" name="pets">
-					<option value="pets_yes">Yes</option>
-					<option value="pets_no">No</option>
-				</select>
-				<br>
-			<h2>Companies with rider programs?</h2><br>
-				<select id="riders" name="riders">
-					<option value="riders_yes">Yes</option>
-					<option value="riders_no">No</option>
-				</select>
-				<br>
-				<br>
-				<br>
-				<!-- <input type='hidden' value='{{co.id}}' name='co_id'> -->
-				<button type="submit" value="Submit">Find Companies</button>
-				{% csrf_token %}
-			</form>
-
+				<h2>Pet Friendly Companies?</h2><br>
+					<select class="answer" id="pets" name="pets">
+						<option value="pets_yes">Yes</option>
+						<option value="pets_no">No</option>
+					</select>
+					<br>
+				<h2>Companies with rider programs?</h2><br>
+					<select class="answer" id="riders" name="riders">
+						<option value="riders_yes">Yes</option>
+						<option value="riders_no">No</option>
+					</select>
+					<br>
+					<br>
+					<br>
+					<!-- <input type='hidden' value='{{co.id}}' name='co_id'> -->
+					<button class="button" type="submit" value="Submit">Find Companies</button>
+					{% csrf_token %}
+				</form>
+			</div>
 		{% endblock %}
 	</body>
 </html>

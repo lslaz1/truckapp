@@ -6,8 +6,13 @@
 	<body>
 		{% block content %}
 
-		<h1>Sorry, {{request.user.username}}. Your answers didn't match any companies!</h1>
-		
+		<h1 style="text-align:center;margin-top:120px;">Sorry, {{request.user.username}}. Your answers didn't match any companies!</h1>
+		<div style="text-align:center;margin:25px">
+			<form action="/questionnaire/" method="get">
+				<button class="button" style="width:250px;height:50px;font-size:25px;">Try Again</button>
+			</form>
+		</div>
+
 		{% endblock %}
 	</body>
 </html>

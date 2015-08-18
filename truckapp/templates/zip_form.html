@@ -1,14 +1,19 @@
 {% extends "base.html" %}
 
-{% block title %}Check Distance{% endblock %}
+<title>Check Distance</title>
 
 {% block content%}
 
 <form action="/distance/" method="post">
-	<input id="zip1" placeholder="  Type First Zip Code" name='zip1'>
-	<input id="zip2" placeholder="Type Second Zip Code" name='zip2'>
-	<button type='submit'>Get Distance</button>
-	{% csrf_token %}
+	<div id="zipform1" align="center">
+		<br>
+		<br>
+		<h2>Where do you want to start?</h2><br>
+		<input id="zip1" placeholder="  Type First Zip Code" name='zip1' align="center" maxlength="5">
+		<h2>Where's your destination?<h2>
+		<input id="zip2" placeholder=" Type Second Zip Code" name='zip2' maxlength="5"><br><br>
+		<button class="button" style="height:50px;width:250px;font-size:25px;" type='submit'>Get Distance</button>
+		{% csrf_token %}
 </form>
 
 {% endblock %}

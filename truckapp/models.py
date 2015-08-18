@@ -47,6 +47,7 @@ class Company(models.Model):
 	pets = models.TextField()
 	riders = models.TextField()
 	experience = models.IntegerField()
+	url = models.TextField()
 
 class Result(models.Model):
 	user = models.ForeignKey(User)
