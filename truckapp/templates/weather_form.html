@@ -2,6 +2,7 @@
 {% block content %}
 <html>
   <head>
+    <title>Get Weather</title>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
 
@@ -9,7 +10,7 @@ var celsius = true;
 
 function draw_text(context,text,x,y) 
 {
-    context.font = 'normal 18pt Courier New';
+    context.font = 'normal 18pt Helvetica';
 
    context.fillStyle = "black";
    context.fillText(text, x, y);
@@ -18,7 +19,7 @@ function draw_text(context,text,x,y)
 
 function day_text(context,text,x,y) 
 {
-    context.font = 'normal 28pt Courier New';
+    context.font = 'normal 24pt Trebuchet MS';
 
    context.fillStyle = "black";
    context.fillText(text, x, y);
@@ -27,23 +28,23 @@ function day_text(context,text,x,y)
 
 function temp_text(context,text,x,y) 
 {
-    context.font = 'normal 18pt Courier New';
+    context.font = 'normal 14pt Trebuchet MS';
 
-   context.fillStyle = "#E2DDB5";
+   context.fillStyle = "white";
    context.fillText(text, x, y);
 
 }
 
 function draw_rect_high(context,x,y,width,height)
 {
-    context.fillStyle = "#B28647";
+    context.fillStyle = "#888888";
     context.fillRect(x, y, width, height);
 
 }
 
 function draw_rect_low(context,x,y,width,height)
 {
-    context.fillStyle = "#5C3317";
+    context.fillStyle = "#6D9BF1";
     context.fillRect(x, y, width, height);
 
 }
@@ -97,10 +98,10 @@ function process_weather_data(data)
     //if celsius then nothing
     //else
     //celsius = !celsius;
-    draw_text(context,"A Visual Representation of Your Weather with Rectangles!",10,100);
+    // draw_text(context,"A Visual Representation of Your Weather with Rectangles!",10,100);
     var list = data.list;
     var day = 0;
-    var x = 125
+    var x = 345
     for (obj in list) {
       day++;
       var days = list[obj];
@@ -111,19 +112,15 @@ function process_weather_data(data)
       var weather = days['weather']['0'];
       var description = weather['description'];
       console.log(description);
-      // table_html += "<tr><td>"+day+"</td><td>"+tempmax+"</td><td>"+tempmin+"</td><td>"+description+"</td></tr>"
-      day_text(context, city,10,50)
+      day_text(context, city,345,90)
       day_text(context, "Day"+day,x+5,355)
-      draw_rect_high(context,x,320,100,2*(tempmax * -1));
+      draw_rect_high(context,x,320,75,2*(tempmax * -1));
       temp_text(context, tempmax,x+15,315)
-      draw_rect_low(context,x,365,100,2*(tempmin));
+      draw_rect_low(context,x,365,75,2*(tempmin));
       temp_text(context, tempmin,x+15,390)
-      x += 110
+      x += 85
       
     }
-
-    // table_html += "</table>"
-    // table.innerHTML += table_html;
     
 
 }
@@ -139,7 +136,7 @@ function get_inputs_then_fetch()
       alert("Please enter a city.");
     };
 
-    forecast_url = forecast_url_base + "&q=" + city_value + "&cnt=5"
+    forecast_url = forecast_url_base + "&q=" + city_value + "&cnt=7"
     console.log(city_value,forecast_url);
     
     get_weather_data(forecast_url,process_weather_data);
@@ -155,16 +152,19 @@ get_inputs_then_fetch();
 
 <body>
 
-</br>
-</br>
-<div align="center">
-  <h2>Check weather for</h2>
+<div align="center" style="margin-top:100px;">
+  <h2>Check weather for</h2><br>
   <input id="city" placeholder="Type a City Name"><br>
-  <button class="button" style="margin-top: 20px;" onclick="get_inputs_then_fetch()">Fetch</button>
+  <button class="button" style="margin-top: 30px;height:50px;width:250px;font-size:25px;" onclick="get_inputs_then_fetch()">Get Weather</button>
 </div>    
 
-
-<div id="results_div"></div>
+<div class="containter-fluid">  
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div id="results_div"></div>
+      </div>
+    </div>
+</div>      
 
 </body>
 

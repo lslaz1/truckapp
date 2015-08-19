@@ -4,7 +4,7 @@ from truckapp import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^truckapp/', include('truckapp.urls')),
+    url(r'^truckapp/', views.homepage, name='home'),
     url(r'^$', views.homepage, name='home'),
     url(r'^signup/$', views.signup, name='signup'),
     url(r'^register/$', views.register, name='register'),
